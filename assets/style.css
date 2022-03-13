@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* variables / */
+
+:root {
+    --primary-color: rgb(129, 194, 169);
+    --secondary-color: rgb(160, 148, 206);
+    --other-color: rgb(245, 122, 122);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header and nav start */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header h1 a {
+    color: black;
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+.flex-across {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.flex-across li {
+    margin: 15px;
+}
+
+.flex-across a {
+    color: black;
+}
+
+/* header and nav end */
