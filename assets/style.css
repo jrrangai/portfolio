@@ -14,6 +14,10 @@
     --other-color: rgb(245, 122, 122);
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,12 +30,21 @@ header{
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    padding: 20px;
+    padding: 5px;
     background-color: var(--primary-color);
 }
 
+header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    /* padding: 20px; */
+    background-color: var(--primary-color);
+}
 header h1 a {
     color: black;
+    background-color: var(--secondary-color);
+    padding: 5px 5px 5px 20px;
 }
 
 header nav {
@@ -50,7 +63,77 @@ header nav {
 }
 
 .flex-across a {
-    color: black;
+    color: var(--secondary-color);
 }
 
 /* header and nav end */
+
+ /* hero start */
+
+ /* .hero {
+     padding: 100%;
+     position: relative;
+     background-size: cover;
+     background-position: center;
+ } */
+
+ /* hero end */
+
+ /* title heading */
+.nav-titles {
+    display: flex;
+    text-align: end;
+    margin: 15px;
+    border-right: 5px solid black;
+}
+/* end */
+
+/* about me start*/
+.bio {
+    display: flex;
+    margin: 20px;
+}
+
+h2 {
+    padding: 20px;
+    width: 150px;
+}
+
+.profile-pic {
+    width: 150px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.bio-text {
+    padding: 20px;
+}
+
+/* about me end */
+/* projects start */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* project end */
+
+
+/* contact section start */
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* contact section end */
+
+/* border: 5px solid color */
+/* border right: 5px solid color  */
+
+/* media queries */
+
+/* width 100% to header h1 a */
