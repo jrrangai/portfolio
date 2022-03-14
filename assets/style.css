@@ -9,8 +9,8 @@
 /* variables / */
 
 :root {
-    --primary-color: rgb(129, 194, 169);
-    --secondary-color: rgb(160, 148, 206);
+    --primary-color: rgb(109, 221, 178);
+    --secondary-color: rgb(144, 125, 219);
     --other-color: rgb(245, 122, 122);
 }
 
@@ -32,12 +32,14 @@ header{
     top: 0;
     padding: 5px;
     background-color: var(--primary-color);
+    background-attachment: fixed;
+    z-index: 9999;
 }
 
 header h1 {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    /* width: 50%; */
     /* padding: 20px; */
     background-color: var(--primary-color);
 }
@@ -70,13 +72,25 @@ header nav {
 
  /* hero start */
 
- /* .hero {
-     padding: 100%;
+ .hero {
+    background-image: url(../assets/images/code-hero.jpg) ;
+     display: flex;
+     height: 400px;
      position: relative;
      background-size: cover;
      background-position: center;
- } */
+ }
 
+ .hero h2 {
+     position: absolute;
+     bottom: 40px;
+     right: 60px;
+     font-weight: bold;
+     font-size: 48px;
+     color: var(--secondary-color);
+     background-color: var(--primary-color);
+     padding: 5px;
+ }
  /* hero end */
 
  /* title heading */
@@ -94,19 +108,21 @@ header nav {
     margin: 20px;
 }
 
-h2 {
+h3 {
     padding: 20px;
     width: 150px;
 }
 
 .profile-pic {
-    width: 150px;
+    width: 250px;
+    height: 200px;
     margin: 20px;
     object-fit: cover;
 }
 
 .bio-text {
     padding: 20px;
+    font-size: 24px;
 }
 
 /* about me end */
@@ -114,10 +130,14 @@ h2 {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
     margin: 20px;
 }
 
+.main-project img {
+    height: 200px;
+    width: 350px;
+    padding: 20px; 
+}
 /* project end */
 
 
