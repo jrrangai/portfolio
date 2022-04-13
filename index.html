@@ -4,110 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css'>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/styles2.css" />
     <title>Joshua's Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="#">Joshua Rangai</a>
-        </h1>
-        <nav >
-           <ul class="flex-across">
-               <li>
-                   <a href="#about-me" > About Me </a>
-                </li>
-               <li>
-                   <a href="#my-work" > My Work </a>
-               </li>
-               <li>
-                   <a href="#contact-me"> Contact Me </a>
-               </li>
-               <li>
-                   <a href="#resume"> Resume </a>
-               </li>
-           </ul> 
+    <!-- Nav Bar -->
+    <div class="block">
+        <nav class="navbar is-dark">
+            <div class="navbar-start">
+                <a href="./index.html" class="navbar-item title is-2">Joshua Rangai</a>
+            </div>
+            <div class="navbar-menu title is-4">
+                <div class="navbar-end">
+                    <a href="#about-me" class="navbar-item"> About Me </a>
+                    <a href="#my-work" class="navbar-item"> My Work </a>
+                    <a href="#resume" class="navbar-item"> Resume </a>
+                </div>  
+            </div>
         </nav>
-    </header>
+    </div>
 
-    <section class="hero">
-        <h2>Welcome To My Portfolio</h2>
-    </section>
-
-    <main>
-        <section id="about-me" class="bio flex">
-            <!-- About Me -->
-            <div class="nav-titles">
-                <h3>About Me</h3>
+    <!-- Hero Section -->
+    <div class="block">
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title" id="heroText">WELCOME TO MY PORTFOLIO!</h1>
+                </div>
             </div>
-           
-            <div class="my-bio flex">
-                <img class="profile-pic flex" alt="My face" src="./assets/images/self.jpg" />
-                <p class="bio-text">
-                    Hi, my name is Josh. I currently attend a full-stack web development bootcamp in order to become a software developer. Before starting this path in tech I attended the University of Wisconsin- Milwaukee where I obtained a bachelor's of art in Philosophy and a certificate in ethics and values.
-                </p>   
-            </div>    
         </section>
-        <section id="my-work" class="projects">
-            <!-- Website/Portfolio -->
-            <div class="nav-titles">
-                <h3>My Work</h3>
+    </div>
+
+    <!-- Aboout Me  -->
+    <div class="block">
+       <div class="box">
+            <h3 class="title is-3 categoryTitle" id="about-me"> About Me </h3>
+            <p class="content is-medium">
+                Hi, my name is Josh. I currently attend a full-stack web development bootcamp in order to become a software developer. Before starting this path in tech I attended the University of Wisconsin- Milwaukee where I obtained a bachelor's of art in Philosophy and a certificate in ethics and values.
+            </p>
+       </div>
+    </div>
+
+    <!-- My Work -->
+    <div class="block" id="projectsContainer">
+        <div>
+            <h3 id="my-work" class="title is-3 categoryTitle"> My Work </h3>
+        </div> <br>
+
+        <div class="columns">
+            <div class="column is-full">
+                <article id="mainProject" class="image">
+                    <a class="imgContain" target="_blank" href="https://mazattack1999.github.io/meditation-buddy/index.html" >
+                        <img  alt="demo of meditation buddy" src="./assets/images//meditation_buddy.gif">
+                        <div class="overlay">
+                            <div class="text">Meditation Buddy</div> 
+                        </div>
+                         
+                    </a>
+                </article>
             </div>
-            <div class="main-project">
-                <article class="run-buddy">
+        </div>
+
+        <div class="columns otherProjectColumn">
+            <div class="column is-half">
+                <article class="image otherProject">
                     <a target="_blank" href="https://jrrangai.github.io/run-buddy" >
                         <div class="project-title"> Run Buddy </div>
                         <img  alt="woman tying shoes" src="./assets/images/hero-bg.jpg"> 
                     </a>
                 </article>
-                <div>
-                    <article class="side-project">
-                        <a target="_blank" href="https://jrrangai.github.io/run-buddy" >
-                            <img  alt="woman tying shoes" src="./assets/images/coming-soon.jpg">
-                        </a>
-                    </article>
-                    <article class="side-project">
-                        <a target="_blank" href="https://jrrangai.github.io/run-buddy" >
-                            <img  alt="woman tying shoes" src="./assets/images/coming-soon.jpg">
-                        </a>
-                    </article>
-                </div>
-                <div>    
-                    <article class="side-project">
-                        <a target="_blank" href="https://jrrangai.github.io/run-buddy" >
-                            <img  alt="woman tying shoes" src="./assets/images/coming-soon.jpg">
-                        </a>
-                    </article>
-                    <article class="side-project">
-                        <a target="_blank" href="https://jrrangai.github.io/run-buddy" >
-                            <img  alt="woman tying shoes" src="./assets/images/coming-soon.jpg">
-                        </a>
-                    </article>
-                </div>      
-            </div>       
-        </section>
-        <section id="contact-me" class="contact-info flex">
-            <!-- Contact Me -->
-            <div class="nav-titles">
-                <h3>Contact Me</h3>
             </div>
+            <div class="column is-half">
+                <article class="image otherProject">
+                    <a target="_blank" href="https://jrrangai.github.io/code-quiz/" >
+                        <div class="project-title"> Code Quiz </div>
+                        <img  alt="Photo of quiz with start button, timer, etc..." src="./assets/images/code-quiz.png"> 
+                    </a>
+                </article>
+            </div>
+        </div>
+
+        <div class="columns otherProjectColumn">
+            <div class="column is-half">
+                <article class="image otherProject">
+                    <a target="_blank" href="https://jrrangai.github.io/weather_api/" >
+                        <div class="project-title"> Weather Dashboard </div>
+                        <img  alt="Displaying of weather and a search bar to type in city" src="./assets/images/weather_api.png"> 
+                    </a>
+                </article>
+            </div>
+            <div class="column is-half">
+                <article class="image otherProject">
+                    <a target="_blank" href="https://jrrangai.github.io/work-day-calendar/" >
+                        <div class="project-title"> Word Day Scheduler </div>
+                        <img  alt="woman tying shoes" src="./assets/images/workday-schedule.png"> 
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="block" id="contactFooter">
+        <footer class="footer">
             <ul class="flex-across">
                 <li>
-                    <a>847-555-5555</a>
+                    <a target="_blank" href="tel:847-555-5555"><i class="fa fa-phone"></i> Call/ Text</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/jrrangai/refractor_marketing/blob/main/index.html"> Github </a>
+                    <a target="_blank" href="https://github.com/jrrangai"> <i class="fab fa-github"></i> Github </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/joshua-rangai-ba3141163/"> Linkedin </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/joshua-rangai-ba3141163/"><i class="fab fa-linkedin"></i> Linkedin </a>
                 </li>
                 <li>
-                    <a>rangaij0116@hotmail.com</a>
+                    <a href="mailto:joshrangai@gmail.com" ><i class="fa fa-envelope"></i> Email</a>
                 </li>
             </ul>
-        </section>
-    </main>
-    
+        </footer>
+    </div>
 </body>
 </html>
