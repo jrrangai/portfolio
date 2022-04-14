@@ -20,7 +20,7 @@ body {
 .hero {
     background-image: url(./images/hero-img.jpg) ;
      display: flex;
-     height: 400px;
+     height: 580px;
      position: relative;
      background-size: cover;
      background-position: center;
@@ -33,6 +33,11 @@ body {
     font-size: 42px;
     outline: 5px solid beige;
     padding: 5px;
+}
+
+#selfie {
+    height: 300px;
+    border-radius: 70px;
 }
 
 /* About Me starts */
