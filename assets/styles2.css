@@ -38,8 +38,6 @@ body {
 #selfie {
     height: 300px;
     border-radius: 70px;
-    display: flex;
-    margin: 0 30em;
 }
 /* About Me starts */
 .box {
